@@ -1,6 +1,6 @@
 # Saywyre releases
 
-Saywyre is voice typing that runs on your own Windows PC. You hold a key, talk, and the words appear where you are typing. Nothing you say leaves the computer.
+Saywyre is voice typing that runs on your own Windows PC. You hold a key, talk, and the words appear where you are typing. The speech model runs on your PC, not in the cloud.
 
 This repo holds the Windows installers only. The source code isn't public yet; it will be later.
 
