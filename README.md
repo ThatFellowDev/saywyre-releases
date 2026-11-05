@@ -6,11 +6,13 @@
 
 **Talk instead of type.** Hold a shortcut, say it, let go. Your words appear wherever you're typing.
 
-Free for Windows and Linux. macOS is on the way.
+Free for Windows, macOS and Linux.
 
-<a href="https://github.com/ThatFellowDev/saywyre-releases/releases/latest"><img src="assets/download-windows.svg" width="232" height="56" alt="Download for Windows"></a>
-<a href="https://github.com/ThatFellowDev/saywyre-releases/releases/latest"><img src="assets/download-linux.svg" width="232" height="56" alt="Download for Linux"></a>
-<a href="https://github.com/ThatFellowDev/saywyre-releases/releases"><img src="assets/download-macos.svg" width="232" height="56" alt="macOS, coming soon"></a>
+<a href="https://github.com/ThatFellowDev/saywyre-releases/releases/latest/download/Saywyre-Windows-Setup.exe"><img src="assets/download-windows.svg" width="232" height="56" alt="Download for Windows"></a>
+<a href="https://github.com/ThatFellowDev/saywyre-releases/releases/latest/download/Saywyre-macOS.dmg"><img src="assets/download-macos.svg" width="232" height="56" alt="Download for macOS"></a>
+<a href="https://github.com/ThatFellowDev/saywyre-releases/releases/latest/download/Saywyre-Linux.AppImage"><img src="assets/download-linux.svg" width="232" height="56" alt="Download for Linux"></a>
+
+<sub>macOS needs an Apple silicon Mac (M1 or newer). Installing on Linux? .AppImage runs anywhere, .deb for Ubuntu/Debian ([get the .deb](https://github.com/ThatFellowDev/saywyre-releases/releases/latest/download/Saywyre-Linux.deb)).</sub>
 
 <br><br>
 
@@ -36,19 +38,18 @@ Free for Windows and Linux. macOS is on the way.
 <details>
 <summary><b>Windows</b></summary>
 
-1. Open the [latest release](https://github.com/ThatFellowDev/saywyre-releases/releases/latest).
-2. Download `Saywyre_<version>_x64-setup.exe` and run it.
-3. If Windows says it protected your PC, click **More info**, then **Run anyway**. The installer isn't code-signed yet.
+1. [Download the installer](https://github.com/ThatFellowDev/saywyre-releases/releases/latest/download/Saywyre-Windows-Setup.exe) and run it.
+2. If Windows says it protected your PC, click **More info**, then **Run anyway**. The installer isn't code-signed yet.
 
 </details>
 
 <details>
 <summary><b>Linux</b></summary>
 
-Open the [latest release](https://github.com/ThatFellowDev/saywyre-releases/releases/latest) and pick one:
+Pick one:
 
-- **Ubuntu or Debian:** download `Saywyre_<version>_amd64.deb`, then run `sudo apt install ./Saywyre_<version>_amd64.deb`.
-- **Any distro:** download `Saywyre_<version>_amd64.AppImage`, run `chmod +x Saywyre_*.AppImage`, then open it.
+- **Ubuntu or Debian:** [download the .deb](https://github.com/ThatFellowDev/saywyre-releases/releases/latest/download/Saywyre-Linux.deb), then run `sudo apt install ./Saywyre-Linux.deb`.
+- **Any distro:** [download the .AppImage](https://github.com/ThatFellowDev/saywyre-releases/releases/latest/download/Saywyre-Linux.AppImage), run `chmod +x Saywyre-Linux.AppImage`, then open it.
 
 Both are for 64-bit Intel and AMD computers. If the AppImage won't open, install libfuse2 (`sudo apt install libfuse2t64` on Ubuntu 24.04).
 
@@ -57,7 +58,19 @@ Both are for 64-bit Intel and AMD computers. If the AppImage won't open, install
 <details>
 <summary><b>macOS</b></summary>
 
-The Mac version is on its way. It will show up on the [releases page](https://github.com/ThatFellowDev/saywyre-releases/releases) first.
+1. [Download the .dmg](https://github.com/ThatFellowDev/saywyre-releases/releases/latest/download/Saywyre-macOS.dmg) and open it.
+2. Drag Saywyre into Applications.
+
+This build is for Apple silicon Macs (M1 or newer).
+
+</details>
+
+<details>
+<summary><b>What are the other files on the release page?</b></summary>
+
+- `.sig` files and `.tar.gz` files power auto-update inside the app. You never need to download them.
+- `latest.json` tells the app which version is newest.
+- "Source code (zip)" and "Source code (tar.gz)" are added by GitHub to every release automatically. This repo holds no app source.
 
 </details>
 
