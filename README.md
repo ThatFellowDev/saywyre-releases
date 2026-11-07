@@ -33,6 +33,43 @@ Free for Windows, macOS and Linux.
 <tr><td><img src="assets/icon-stats.svg" width="44" height="44" alt=""></td><td><b>Shows your progress.</b> Search everything you said and see your words per day, streak and time saved.</td></tr>
 </table>
 
+## Everything it does
+
+**Talking**
+- Hold a shortcut (Alt + Shift + Space by default), talk, let go, and the text is typed into the app you were in. Or tap once to start and once to stop.
+- A small pill shows when Saywyre is listening, with your words as you say them (live captions). Pick its style: Dots, Bars, Line or Light.
+- Light cleanup drops "um" and "uh", or keeps every word if you prefer. It never changes what you meant.
+- Silence and stray sounds are not typed. A take with almost no voice in it, or an "Okay" or "Mm-hmm" from a breath or a key click, stays out of your text and is kept in History marked as not typed.
+- Say "new paragraph" or "new line" for line breaks. Add snippets, so saying "my calendar link" types the link.
+- Paste last take types your last take again if it landed in the wrong place (Ctrl + Alt + V by default).
+- Per-app styles set how much cleanup applies in each app.
+- Show where text went: a soft glow, or a small chip that flies from the pill to where your words landed.
+- If your mic level is far below a usual speaking level, Saywyre tells you, at most once a day. Settings has a live level meter.
+
+**Speech models**
+- Everything runs on your computer's processor. Built-in choices: Parakeet Unified EN, Parakeet TDT v3, Whisper Turbo, Whisper Small English and Moonshine Small.
+- Each language has one model marked Recommended, and the one that fits your computer is marked Best fit for this PC. Test speed measures a model on your machine.
+- Add your own by pasting a Hugging Face link or choosing a .gguf file. Saywyre checks that it can run it and shows its family, size and license.
+
+**Your words**
+- Add up to 1,000 words, each with up to 20 ways it is misheard, and later takes spell them your way. Saywyre also fixes spellings that sound like one of your words.
+- In History, Fix a word corrects a take and can add the word to your list. Stats suggests words you may want to add.
+
+**History, Stats and audio**
+- Every take is saved on your computer. Search it, copy from it, and filter by day or range. History is kept forever by default, or for the time you choose.
+- Keep audio saves each take's recording so you can play it back, save a copy or drag the file into another app. Record only keeps the audio and types nothing, for voice notes.
+- Stats shows words, pace, time saved, filler words and more. Share turns it into a square or story image.
+- Move to another computer exports and imports your words, snippets, settings, history, stats and recordings, whichever you tick.
+
+**Read aloud**
+- Select text and have it read to you by a voice that runs on your computer, with captions that follow along, a speed control and its own shortcut. On Windows you can also drag a box over any text on screen. Or point it at your own OpenAI-compatible speech server.
+
+**Everyday**
+- Light and dark themes, a tray menu, and updates that install only when you say so.
+- On Linux, the talk key works on X11 and mostly not on Wayland yet.
+
+Each release page lists what changed in that version.
+
 ## Install
 
 <details>
@@ -70,7 +107,7 @@ This build is for Apple silicon Macs (M1 or newer).
 
 - `.sig` files and `.tar.gz` files power auto-update inside the app. You never need to download them.
 - `latest.json` tells the app which version is newest.
-- "Source code (zip)" and "Source code (tar.gz)" are added by GitHub to every release automatically. This repo only holds the installers. The app's source is at [ThatFellowDev/saywyre](https://github.com/ThatFellowDev/saywyre).
+- "Source code (zip)" and "Source code (tar.gz)" are added by GitHub to every release automatically. This repo only holds the installers and this page, so those two files have nothing you need.
 
 </details>
 
@@ -78,16 +115,24 @@ On first start, Saywyre downloads its speech model. After that, hold **Alt + Shi
 
 ## Your privacy
 
-Your voice is turned into text on your computer. **Keep audio** saves your last 1,000 takes, up to 1 GB, on your computer so you can play them back; switch it off in Settings to save none. Your history and stats stay on your computer too.
+Your voice and your words stay on your computer. Speech is turned into text on your machine, and once a speech model is downloaded, Saywyre works offline. It needs no account and sends no usage counts and none of your text.
+
+Your history, stats and recordings live on your computer. **Keep audio** saves your last 1,000 takes, up to 1 GB, so you can play them back. Switch it off in Settings to save none, or delete saved audio any time.
+
+The internet is used for three things: downloading a speech model or the read-aloud voice when you ask for one, checking for updates, and read aloud if you choose your own voice server (only the text you read aloud goes there).
 
 ## Updates
 
 Saywyre checks this page for new versions and downloads nothing until you click to install. Each update is signed, and Saywyre refuses one whose signature doesn't match. You can also check from **Settings > About**.
 
+## Help
+
+Found a bug or have a question? [Open an issue](https://github.com/ThatFellowDev/saywyre-releases/issues). Say which computer you use, the Saywyre version (Settings > About) and what you did. Do not paste anything you said or typed.
+
 ---
 
 <div align="center">
 
-Made by [Postwyre](https://postwyre.com). Open source under the [Apache License 2.0](https://github.com/ThatFellowDev/saywyre/blob/main/LICENSE): [source code](https://github.com/ThatFellowDev/saywyre).
+Saywyre is free to download and use. Made by [Postwyre](https://postwyre.com).
 
 </div>
