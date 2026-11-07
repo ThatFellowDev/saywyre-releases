@@ -70,7 +70,7 @@ This build is for Apple silicon Macs (M1 or newer).
 
 - `.sig` files and `.tar.gz` files power auto-update inside the app. You never need to download them.
 - `latest.json` tells the app which version is newest.
-- "Source code (zip)" and "Source code (tar.gz)" are added by GitHub to every release automatically. This repo holds no app source.
+- "Source code (zip)" and "Source code (tar.gz)" are added by GitHub to every release automatically. This repo only holds the installers. The app's source is at [ThatFellowDev/saywyre](https://github.com/ThatFellowDev/saywyre).
 
 </details>
 
@@ -78,7 +78,7 @@ On first start, Saywyre downloads its speech model. After that, hold **Alt + Shi
 
 ## Your privacy
 
-Your voice is turned into text on your computer. Recordings aren't saved unless you switch on **Keep audio** in Settings, and your history and stats stay on your computer.
+Your voice is turned into text on your computer. **Keep audio** saves your last 1,000 takes, up to 1 GB, on your computer so you can play them back; switch it off in Settings to save none. Your history and stats stay on your computer too.
 
 ## Updates
 
@@ -88,6 +88,6 @@ Saywyre checks this page for new versions and downloads nothing until you click 
 
 <div align="center">
 
-Made by [Postwyre](https://postwyre.com)
+Made by [Postwyre](https://postwyre.com). Open source under the [Apache License 2.0](https://github.com/ThatFellowDev/saywyre/blob/main/LICENSE): [source code](https://github.com/ThatFellowDev/saywyre).
 
 </div>
